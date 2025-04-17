@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add Transaction</h2>
+<form method="post" action="/add">
+    <input type="date" name="date" required><br>
+    <select name="type">
+        <option value="Income">Income</option>
+        <option value="Expense">Expense</option>
+    </select><br>
+    <input type="text" name="category" placeholder="Category" required><br>
+    <input type="number" name="amount" placeholder="Amount" required><br>
+    <button type="submit">Add</button>
+</form>
+{% endblock %}

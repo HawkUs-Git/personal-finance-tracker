@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome, {{ username }}</h2>
+<h3>Transactions</h3>
+<table>
+    <tr>
+        <th>Date</th><th>Type</th><th>Category</th><th>Amount</th>
+    </tr>
+    {% for t in transactions %}
+    <tr>
+        <td>{{ t.date }}</td>
+        <td>{{ t.type }}</td>
+        <td>{{ t.category }}</td>
+        <td>${{ t.amount }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

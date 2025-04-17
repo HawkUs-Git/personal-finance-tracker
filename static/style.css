@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+nav a {
+    margin: 0 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
